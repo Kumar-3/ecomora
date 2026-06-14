@@ -1,0 +1,62 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - .dart_tool/**
+    - .idea/**
+    - generated/**
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # ---------- Code Style ----------
+    always_declare_return_types: true
+    always_put_required_named_parameters_first: true
+    always_use_package_imports: true
+    avoid_print: true
+    avoid_unnecessary_containers: true
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+
+    # ---------- Performance ----------
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_declarations: true
+    avoid_redundant_argument_values: true
+
+    # ---------- Readability ----------
+    prefer_final_fields: true
+    prefer_final_locals: true
+    use_super_parameters: true
+    sort_child_properties_last: true
+
+    # ---------- Safety ----------
+    cancel_subscriptions: true
+    close_sinks: true
+    use_build_context_synchronously: true
+
+    # ---------- Flutter Specific ----------
+    use_key_in_widget_constructors: true
+    sized_box_for_whitespace: true
+    prefer_const_constructors_in_immutables: true
+
+    # ---------- Clean Architecture ----------
+    depend_on_referenced_packages: true
+    unnecessary_lambdas: true
+    unnecessary_this: true
+
+    # ---------- Naming ----------
+    camel_case_types: true
+    file_names: true
+    non_constant_identifier_names: false
+
+    # ---------- Error Prevention ----------
+    avoid_returning_null_for_future: true
+    avoid_void_async: true
